@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'GreatVibes' ;
+    src: url('fontes/Great_Vibes/GreatVibes-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+  
+  }
+  @font-face{
+    font-family:'InriaSerif' ;
+    src: url('fontes/Inria_Serif/InriaSerif-Light.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@import url('https://fonts.googleapis.com/css2? family= Great+Vibes & display=swap');
+
+
+:root{
+    --cor-rosa00:#fee1e0;
+    --cor-rosa01:#FFC8C6;
+    --cor-rosa02:#FFB1B1;
+    /* Rosa Fundo */
+    --cor-rosa03: #F87F7C; 
+    --cor-rosa04:#FA6B68;
+    --cor-rosa05:#fb4744;
+    --cor-rosa06:#f82925;
+
+    --font-normal: 'cursive';
+    --font-vibes: 'GreatVibes' ;
+    --font-inria: 'InriaSerif';
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+body{
+    background-color: var(--cor-rosa00);
+    font-family: 'InriaSerif', Arial, Helvetica, sans-serif;
+}
+
+
+#logo{
+    width: 100px;
+    padding: 10px;
+}
+header{
+    background-color: var(--cor-rosa03);
+    padding-bottom: 8px;
+    background-image: linear-gradient(to top, #fb4744, #FA6B68, #F87F7C, #fda6a6  );
+    width: auto;
+    min-height: 150px;
+}
+
+header h1{
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font-vibes);
+    font-size: 5em;
+    text-shadow: 1px 1px 1px var(--cor-rosa05) ;
+}
+header h3{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: var(--font-inria);
+}
+
+nav{
+    background-color: var(--cor-rosa05);
+    padding-bottom: 8px;
+    padding-left: 20px;
+   
+  
+}
+
+nav  a{
+    text-decoration: none;
+    font-weight: bold;
+    color:var(--cor-rosa02);
+    padding: 8px 15px ;
+    font-family: var(--font-inria);
+   
+
+}
+nav  a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color:var(--cor0rosa05);
+    padding: 8px 15px ;
+    background-color: var(--cor-rosa03);
+    transition: 0.6s;
+    border-radius:  10% 10% 0px 0px ;
+}
+
+main{
+    background-color: white;
+    padding: 25px;
+    min-width:280px ;
+    max-width: 800px ;
+    margin: auto;
+    border-radius:0px 0px 10px 10px;
+    box-shadow: 0px 0px 10px var(--cor-rosa04) ;
+
+}
+
+main p {
+    text-align: justify;
+    margin: 15px 0px;
+    line-height: 1.8em;
+    text-indent: 30px;
+
+}
+main h2{
+   font-family: var(--font-inria);
+    font-size: 2.5em;
+}
+
+img{
+    width: 100%;
+    margin: 20px 0px;
+   
+}
+
