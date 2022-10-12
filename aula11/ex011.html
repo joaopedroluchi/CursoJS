@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Nacionalidade</title>
+</head>
+<body>
+    <h1>Pesquisa de Nacionalidade</h1>
+    <h3>*Utilize na inicial da palavra letra maiuscula*</h3>
+    <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Pesquisar" onclick="pesquisar()">
+    <div id="res"></div>
+
+    <script>
+        function pesquisar() {
+            var txtn = window.document.querySelector('input#txtnac')
+            var res = window.document.querySelector('div#res')
+            var nac = txtn.value
+            res.innerHTML = `<p>Seu país de origem é ${nac}</p>`
+            if (nac == 'Brasil'){
+                res.innerHTML +=`<p>Você é brasileiro</p>` 
+            } else {
+                if (nac == 'França') {
+                    res.innerHTML += `<p>Você é frances</p>`
+                } else {
+                    res.innerHTML += `<p>Você é estrangeiro</p>`
+                }
+            }
+
+
+        }
+    </script>
+</body>
+</html>
