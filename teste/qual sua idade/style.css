@@ -1,0 +1,22 @@
+body{
+    font: normal 1em Arial;
+    background-color: aqua;
+}
+
+section{
+    background-color: white;
+    width: 700px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+
+}
+header h1{
+    text-align: center;
+
+}
+
+div{
+    text-align: center;
+    padding: 10px;
+}
